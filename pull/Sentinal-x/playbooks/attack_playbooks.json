@@ -1,0 +1,142 @@
+{
+  "playbooks": [
+    {
+      "id": "PB-001",
+      "name": "Endpoint Anomaly Response",
+      "type": "endpoint_anomaly",
+      "description": "Unknown process communicating with a suspicious external destination.",
+      "attack_chain": [
+        "endpoint_anomaly",
+        "suspicious_network_connection"
+      ],
+      "risk_tier": "medium",
+      "recommended_action": "Investigate the endpoint, isolate the affected host if the anomaly is confirmed, and continue monitoring.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-002",
+      "name": "Brute Force Login Response",
+      "type": "brute_force",
+      "description": "Multiple failed authentication attempts detected from the same source.",
+      "attack_chain": [
+        "failed_login",
+        "brute_force",
+        "account_compromise"
+      ],
+      "risk_tier": "medium",
+      "recommended_action": "Rate-limit the source IP, monitor authentication activity, and investigate the affected account.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-003",
+      "name": "Suspicious Login Response",
+      "type": "suspicious_login",
+      "description": "Login detected from an unusual location, device, or behavioral pattern.",
+      "attack_chain": [
+        "suspicious_login",
+        "credential_compromise"
+      ],
+      "risk_tier": "medium",
+      "recommended_action": "Verify the login, challenge the session with additional authentication, and monitor the account.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-004",
+      "name": "Phishing Email Response",
+      "type": "phishing",
+      "description": "Potential phishing email containing a suspicious link, attachment, or credential harvesting attempt.",
+      "attack_chain": [
+        "phishing",
+        "credential_theft",
+        "initial_access"
+      ],
+      "risk_tier": "high",
+      "recommended_action": "Quarantine the suspicious email, block the malicious indicators, and investigate affected users.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-005",
+      "name": "Malware Detection Response",
+      "type": "malware",
+      "description": "Potential malicious executable or malware behavior detected on an endpoint.",
+      "attack_chain": [
+        "malware_execution",
+        "execution",
+        "persistence"
+      ],
+      "risk_tier": "high",
+      "recommended_action": "Quarantine the affected endpoint, isolate suspicious files, and begin incident investigation.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-006",
+      "name": "Privilege Escalation Response",
+      "type": "privilege_escalation",
+      "description": "Unexpected privilege elevation or suspicious administrative activity detected.",
+      "attack_chain": [
+        "privilege_escalation",
+        "account_compromise"
+      ],
+      "risk_tier": "high",
+      "recommended_action": "Disable or restrict the affected account, revoke suspicious privileges, and investigate the activity.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-007",
+      "name": "Data Exfiltration Response",
+      "type": "data_exfiltration",
+      "description": "Unusual outbound data transfer detected to a suspicious external destination.",
+      "attack_chain": [
+        "data_collection",
+        "data_exfiltration",
+        "command_and_control"
+      ],
+      "risk_tier": "critical",
+      "recommended_action": "Block the destination, restrict outbound traffic, isolate the affected endpoint, and investigate the incident.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-008",
+      "name": "Command and Control Response",
+      "type": "command_and_control",
+      "description": "Endpoint communication with a suspected command-and-control destination detected.",
+      "attack_chain": [
+        "command_and_control",
+        "malware_execution"
+      ],
+      "risk_tier": "critical",
+      "recommended_action": "Block the destination, isolate the affected endpoint, and begin incident response.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-009",
+      "name": "Account Compromise Response",
+      "type": "account_compromise",
+      "description": "Multiple indicators suggest that a user account may have been compromised.",
+      "attack_chain": [
+        "suspicious_login",
+        "credential_compromise",
+        "account_compromise"
+      ],
+      "risk_tier": "high",
+      "recommended_action": "Temporarily disable the affected account, revoke active sessions, reset credentials, and investigate.",
+      "human_approval_required": true
+    },
+    {
+      "id": "PB-010",
+      "name": "Attack Chain Response",
+      "type": "attack_chain",
+      "description": "Multiple related security events indicate a coordinated attack chain.",
+      "attack_chain": [
+        "phishing",
+        "suspicious_login",
+        "endpoint_anomaly",
+        "privilege_escalation",
+        "data_exfiltration"
+      ],
+      "risk_tier": "critical",
+      "recommended_action": "Initiate coordinated incident response, isolate affected endpoints, block malicious indicators, and require human approval before containment.",
+      "human_approval_required": true
+    }
+  ]
+}

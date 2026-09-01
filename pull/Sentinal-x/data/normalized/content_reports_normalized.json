@@ -1,0 +1,62 @@
+[
+  {
+    "report_id": "CR001",
+    "user_id": "U001",
+    "content_id": "C101",
+    "timestamp": "2026-08-18T09:45:12Z",
+    "report_type": "misinformation",
+    "description": "Post contains a false claim about a public health event.",
+    "platform": "social_media",
+    "status": "pending"
+  },
+  {
+    "report_id": "CR002",
+    "user_id": "U003",
+    "content_id": "C102",
+    "timestamp": "2026-08-18T10:25:41Z",
+    "report_type": "fake_news",
+    "description": "News article appears to use an unreliable source.",
+    "platform": "web",
+    "status": "reviewed"
+  },
+  {
+    "report_id": "CR003",
+    "user_id": "U002",
+    "content_id": "C103",
+    "timestamp": "2026-08-18T11:10:28Z",
+    "report_type": "misleading",
+    "description": "Headline does not accurately represent the article content.",
+    "platform": "social_media",
+    "status": "pending"
+  },
+  {
+    "report_id": "CR004",
+    "user_id": "U005",
+    "content_id": "C104",
+    "timestamp": "2026-08-18T12:03:55Z",
+    "report_type": "deepfake",
+    "description": "Video appears to contain manipulated or AI-generated media.",
+    "platform": "video_platform",
+    "status": "investigating"
+  },
+  {
+    "report_id": "CR005",
+    "user_id": "U004",
+    "content_id": "C105",
+    "timestamp": "2026-08-18T13:16:37Z",
+    "report_type": "misinformation",
+    "description": "Post contains statistics without a verifiable source.",
+    "platform": "social_media",
+    "status": "reviewed"
+  },
+  {
+    "report_id": "CR006",
+    "user_id": "U006",
+    "content_id": "C106",
+    "timestamp": "2026-08-18T14:08:22Z",
+    "report_type": "scam",
+    "description": "Content promotes a suspicious financial offer.",
+    "platform": "web",
+    "status": "confirmed"
+  }
+]

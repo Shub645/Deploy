@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sentinal-X Event Schema",
+  "description": "Common schema for normalized security and information-integrity events.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "user_id",
+    "timestamp",
+    "event_type"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Unique identifier for the event."
+    },
+    "user_id": {
+      "type": "string",
+      "description": "Unique identifier of the user associated with the event."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp when the event occurred."
+    },
+    "event_type": {
+      "type": "string",
+      "description": "Category describing the type of event."
+    },
+    "source": {
+      "type": "string",
+      "description": "System or dataset that produced the event."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional event-specific information.",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

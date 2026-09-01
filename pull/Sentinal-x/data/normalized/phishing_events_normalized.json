@@ -1,0 +1,62 @@
+[
+  {
+    "event_id": "PE001",
+    "user_id": "U001",
+    "timestamp": "2026-08-18T09:20:15Z",
+    "message_type": "email",
+    "sender": "security-alert@secure-login.example",
+    "subject": "Your account will be suspended",
+    "url": "http://secure-login.example/verify",
+    "reported": true
+  },
+  {
+    "event_id": "PE002",
+    "user_id": "U003",
+    "timestamp": "2026-08-18T10:12:42Z",
+    "message_type": "sms",
+    "sender": "+91-9000012345",
+    "subject": "You won a reward",
+    "url": "http://claim-reward.example/winner",
+    "reported": false
+  },
+  {
+    "event_id": "PE003",
+    "user_id": "U002",
+    "timestamp": "2026-08-18T10:35:27Z",
+    "message_type": "email",
+    "sender": "support@bank-security.example",
+    "subject": "Verify your banking information",
+    "url": "http://bank-security.example/verify",
+    "reported": true
+  },
+  {
+    "event_id": "PE004",
+    "user_id": "U005",
+    "timestamp": "2026-08-18T11:18:09Z",
+    "message_type": "social_media",
+    "sender": "unknown_user",
+    "subject": "Exclusive investment opportunity",
+    "url": "http://quick-profit.example/invest",
+    "reported": false
+  },
+  {
+    "event_id": "PE005",
+    "user_id": "U004",
+    "timestamp": "2026-08-18T12:05:33Z",
+    "message_type": "email",
+    "sender": "admin@company-security.example",
+    "subject": "Urgent password reset required",
+    "url": "http://company-security.example/reset",
+    "reported": true
+  },
+  {
+    "event_id": "PE006",
+    "user_id": "U006",
+    "timestamp": "2026-08-18T13:22:18Z",
+    "message_type": "sms",
+    "sender": "+91-9111122222",
+    "subject": "Your package could not be delivered",
+    "url": "http://delivery-update.example/track",
+    "reported": false
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "activity_id": "UA001",
+    "user_id": "U001",
+    "timestamp": "2026-08-18T09:10:05Z",
+    "activity_type": "login",
+    "content_id": null,
+    "duration_seconds": 120,
+    "device": "Windows"
+  },
+  {
+    "activity_id": "UA002",
+    "user_id": "U002",
+    "timestamp": "2026-08-18T09:30:22Z",
+    "activity_type": "content_view",
+    "content_id": "C101",
+    "duration_seconds": 85,
+    "device": "Android"
+  },
+  {
+    "activity_id": "UA003",
+    "user_id": "U003",
+    "timestamp": "2026-08-18T10:05:17Z",
+    "activity_type": "content_view",
+    "content_id": "C102",
+    "duration_seconds": 140,
+    "device": "Windows"
+  },
+  {
+    "activity_id": "UA004",
+    "user_id": "U004",
+    "timestamp": "2026-08-18T10:42:31Z",
+    "activity_type": "report_content",
+    "content_id": "C103",
+    "duration_seconds": 45,
+    "device": "iPhone"
+  },
+  {
+    "activity_id": "UA005",
+    "user_id": "U005",
+    "timestamp": "2026-08-18T11:15:44Z",
+    "activity_type": "content_view",
+    "content_id": "C104",
+    "duration_seconds": 210,
+    "device": "MacOS"
+  },
+  {
+    "activity_id": "UA006",
+    "user_id": "U006",
+    "timestamp": "2026-08-18T12:20:19Z",
+    "activity_type": "phishing_report",
+    "content_id": null,
+    "duration_seconds": 60,
+    "device": "Android"
+  },
+  {
+    "activity_id": "UA007",
+    "user_id": "U007",
+    "timestamp": "2026-08-18T13:05:38Z",
+    "activity_type": "content_view",
+    "content_id": "C105",
+    "duration_seconds": 175,
+    "device": "Linux"
+  },
+  {
+    "activity_id": "UA008",
+    "user_id": "U001",
+    "timestamp": "2026-08-18T14:12:26Z",
+    "activity_type": "logout",
+    "content_id": null,
+    "duration_seconds": 30,
+    "device": "Windows"
+  }
+]
